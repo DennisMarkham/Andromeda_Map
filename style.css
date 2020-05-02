@@ -1,3 +1,7 @@
+
+
+/*this is so bizarre.  It clearly applies the style sheet, because of how the images are sized
+yet it ignores half of my commands */
 img[usemap ="#andMapL"]
 {
 width: 1000px;
@@ -8,14 +12,39 @@ img[usemap ="#andMapS"]
 width: 500px;	
 }
 
-@media only screen and (max-width 800px){
+body
+{
+	background-color: hsl(226, 70%, 20%);
+}
+
+#sideInfo
+{
+	border-style: solid;
+	border-color: gold;
+	border-radius: 2px;
+	float: left;
+	padding: 5px;
+
+}
+
+#main
+{
+	padding: 10px;
+}
+
+h1
+{
+	font-size: 400%
+}
+
+@media only screen and (max-width: 800px){
 img[usemap = "#andMapL"]
 {
 	display:none;
 }
 }
 
-@media only screen and (min-width 801px){
+@media only screen and (min-width: 801px){
 img[usemap = "#andMapS"]
 {
 	display:none;
